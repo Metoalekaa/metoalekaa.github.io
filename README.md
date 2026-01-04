@@ -12,13 +12,13 @@ Meto Aleka is a leading importer and distributor of construction tools and equip
 ## Products
 We supply various construction materials and tools, including:
 - Thinner
-- Bow Saw
-- Balanced Brushes
+- Bow Saw Blades
+- Brushes
 - Paint
 - Sandpaper
 - Lacquer
 - Masking Tape
-- Grinder Discs
+- Grinding Discs
 - Keys and drawer locks 
 - Door locks 
 
