@@ -20,12 +20,6 @@
       background: rgba(0,0,0,0.2);
     }
 
-    header img{
-      width: 160px;
-      border-radius: 12px;
-      margin-bottom: 10px;
-    }
-
     h1{
       margin: 0;
     }
@@ -34,11 +28,24 @@
       max-width: 1100px;
       margin: 20px auto;
       padding: 10px;
+    }
 
-      /* 3-column grid */
+    /* LOGO ON TOP */
+    .logo{
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .logo img{
+      width: 180px;
+      border-radius: 12px;
+    }
+
+    /* 3 COLUMN GRID */
+    .grid{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
     }
 
     .product-card{
@@ -55,7 +62,7 @@
     }
 
     .name{
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
       margin-bottom: 5px;
     }
@@ -64,43 +71,123 @@
       font-size: 14px;
       opacity: 0.9;
     }
+
+    /* MOBILE */
+    @media(max-width:800px){
+      .grid{
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+
+    @media(max-width:500px){
+      .grid{
+        grid-template-columns: repeat(1,1fr);
+      }
+    }
   </style>
 </head>
 
 <body>
 
-<header>
-  <!-- LOGO ON TOP -->
+<!-- LOGO -->
+<div class="logo">
   <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/Logo.jpeg" alt="Meto Aleka Logo">
+</div>
 
+<header>
   <h1>መቶ አለቃ - የግንባታ እቃዎች</h1>
   <p>ኦርጂናል እቃዎች</p>
 </header>
 
 <div class="container">
 
-  <!-- Example Product -->
-  <div class="product-card">
-    <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/BowsawBlade.jpg" alt="Bow Saw Blade">
-    <div class="name">የቦሶ ስብስብ ስቻ</div>
-    <div class="caption">ከፍተኛ ጥራት ያለው የብረት ስቻ</div>
+  <div class="grid">
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/BowsawBlade.jpg">
+      <div class="name">የቦሶ ስብስብ ስቻ</div>
+      <div class="caption">ከፍተኛ ጥራት ያለው የብረት ስቻ</div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/Brush.jpg">
+      <div class="name">ብራሽ</div>
+      <div class="caption">ጥራት ያለው የቤት ግንባታ ብራሽ</div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/Snips.jpg">
+      <div class="name">ሲንፕስ</div>
+      <div class="caption">ኦርጂናል ማጂክ መቶ አለቃ</div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/GDisk.jpg">
+      <div class="name">ግራይንደር ዲስክ</div>
+      <div class="caption">ከፍተኛ ጥራት</div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/MeTape.jpg">
+      <div class="name">መለኪያ ቴፕ</div>
+      <div class="caption">ጠንካራ እና ትክክለኛ</div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/DoorS.jpg">
+      <div class="name">የበር ስምፕል</div>
+      <div class="caption">ግንባታ እቃ</div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/Key.jpg">
+      <div class="name">ቁልፍ</div>
+      <div class="caption">ደህንነት የሚጠብቅ</div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/Lock.jpg">
+      <div class="name">መቆለፊያ</div>
+      <div class="caption">ከፍተኛ ጥራት</div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/MesTapes.jpg">
+      <div class="name">መለኪያ ቴፕ (ስብስብ)</div>
+      <div class="caption">በብዛት ይገኛል</div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/MetalPaint.jpg">
+      <div class="name">የብረት ቀለም</div>
+      <div class="caption">የረጅም ጊዜ ጥንካሬ</div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/Shovel.jpg">
+      <div class="name">ጦፈር</div>
+      <div class="caption">ጠንካራ እቃ</div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/WoodGlue.jpg">
+      <div class="name">የእንጨት ግሉ</div>
+      <div class="caption">ከፍተኛ ማጣበቂያ</div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/Thinner.jpg">
+      <div class="name">Thinner</div>
+      <div class="caption">ለቀለም ስራ</div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/Sign.jpg">
+      <div class="name">የመለያ ሰንደቅ</div>
+      <div class="caption">Meto Aleka</div>
+    </div>
+
   </div>
-
-  <div class="product-card">
-    <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/Brush.jpg" alt="Brush">
-    <div class="name">የቦሶ ስብስብ ስቻ</div>
-    <div class="caption">ከፍተኛ ጥራት ያለው የብረት ስቻ</div>
-  </div>
-
-  <div class="product-card">
-    <img src="https://raw.githubusercontent.com/Metoalekaa/metoalekaa.github.io/main/Snips.jpg" alt="Shear Snips">
-    <div class="name">ማጂክ መቶ አለቃ ቦሶ</div>
-    <div class="caption">ኦርጂናል የፓርቹጋል ምላጭ</div>
-  </div>
-
-  <!-- (Your other product cards stay the same) -->
-  <!-- ... paste the rest of your product-cards here ... -->
-
 </div>
 
 <footer>
